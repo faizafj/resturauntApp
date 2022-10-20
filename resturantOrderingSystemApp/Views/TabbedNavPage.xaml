@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages= "clr-namespace:resturantOrderingSystemApp.Views"
+             x:Class="resturantOrderingSystemApp.Views.TabbedNavPage">
+
+    <NavigationPage.TitleView>
+        <Label Text="Resturant Ordering System" TextColor="Black" FontSize="25" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0"/>
+    </NavigationPage.TitleView>
+
+  <pages:MainPage Title= "Homepage"/>
+  <pages:MenuItemsPage Title= "Menu Items"/>
+  <pages:TablesPage Title= "Available Tables"/>
+  <!--<pages:LoginPage Title= "LoginPage"/>-->
+</TabbedPage>
+
+
+
+

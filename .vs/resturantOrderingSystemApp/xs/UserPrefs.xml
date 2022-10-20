@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{3521460E-7FE1-456C-8A64-06DA6F30459B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="resturantOrderingSystemApp/Views/MenuItemDetailsPage.xaml">
+    <Files>
+      <File FileName="resturantOrderingSystemApp/Views/TablesPage.xaml" Line="32" Column="1" IsPinned="True" />
+      <File FileName="resturantOrderingSystemApp/Views/MenuItemsPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="resturantOrderingSystemApp/Views/MenuItemsPage.xaml" Line="47" Column="27" />
+      <File FileName="resturantOrderingSystemApp/ViewModels/MenuItemsDetailsViewModels.cs" Line="1" Column="1" />
+      <File FileName="resturantOrderingSystemApp/Views/MenuItemDetailsPage.xaml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="resturantOrderingSystemApp" expanded="True">
+            <Node name="resturantOrderingSystemApp" expanded="True">
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Navigation" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="MainPage.xaml" expanded="True" />
+                <Node name="MenuItemDetailsPage.xaml" expanded="True" selected="True" />
+                <Node name="MenuItemsPage.xaml" expanded="True" />
+                <Node name="Orders.xaml" expanded="True" />
+                <Node name="PlaceOrderPage.xaml" expanded="True" />
+                <Node name="TabbedNavPage.xaml" expanded="True" />
+                <Node name="TablesPage.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.resturantOrderingSystemApp.Android PreferredExecutionTarget="Android.pixel_3a_xl_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

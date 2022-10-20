@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="resturantOrderingSystemApp.Views.MenuItemsPage"
+             >
+
+    <NavigationPage.TitleView>
+        <Label Text="Menu Items" TextColor="Black" FontSize="25" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0"/>
+    </NavigationPage.TitleView>
+  <ContentPage.Content>
+
+    <Grid BackgroundColor="White">
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="0.1*"> </RowDefinition>
+            <RowDefinition Height="0.9*"> </RowDefinition>
+        </Grid.RowDefinitions>
+       
+        <StackLayout Grid.Row="0" >
+            <StackLayout>
+            <Label Text="All Menu Items" FontSize="30" TextColor="Black" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="10"/>
+           </StackLayout>
+</StackLayout>
+
+        <StackLayout Grid.Row="1" >
+            <ListView HorizontalOptions="StartAndExpand" VerticalOptions="FillAndExpand"
+            SeparatorColor="Black" SeparatorVisibility="Default" HasUnevenRows="True" 
+            ItemsSource="{Binding menuItems}" CachingStrategy="RecycleElement" BackgroundColor="White" ItemSelected="LstMenuItem_MenuItemSelected" SelectedItem="{Binding SelectedItem}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                    <StackLayout Orientation="Vertical" Padding="10"  VerticalOptions="FillAndExpand" MinimumHeightRequest="200" BackgroundColor="Orange" Margin="20">
+                            <StackLayout Orientation="Horizontal">
+                                   <Label Text="{Binding attributes.itemName}" FontSize="25" TextColor="Black"  FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                                    <Label Text=" - £" FontSize="25" TextColor="Black"  FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                                    <Label Text="{Binding attributes.itemPrice}" FontSize="25" TextColor="Black"  FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                        </StackLayout>
+                                                            <Label Text="{Binding attributes.itemDescription}" FontSize="18" TextColor="Black"  FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            </ListView>
+         </StackLayout>
+    </Grid>
+
+    </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="resturantOrderingSystemApp.Views.OrderDetailsPage">
+
+    <NavigationPage.TitleView>
+        <Label Text="Order Details" TextColor="Black" FontSize="25" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+    </NavigationPage.TitleView>
+  <ContentPage.Content>
+
+    <Grid BackgroundColor="White">
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="0.1*"> </RowDefinition>
+            <RowDefinition Height="0.9*"> </RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <StackLayout Grid.Row="0">
+                <Button Text="View All Orders" TextColor="White"  BackgroundColor="Black" > </Button>
+        </StackLayout>
+
+       
+        <StackLayout Grid.Row="1">
+            
+                        <StackLayout Orientation="Vertical" Padding="5"  VerticalOptions="FillAndExpand" MinimumHeightRequest="100">
+                            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                                    <Label Text="Order #" FontSize="18" TextColor="Orange" FontAttributes="Bold"/>
+                                    <Label Text="{Binding CurrentDetails.orderId}" FontSize="18" TextColor="Orange" FontAttributes="Bold"/>
+                                    <Label Text="{Binding CurrentDetails.attributes.orderStatus}" HorizontalTextAlignment="End" FontSize ="18" TextColor="Orange" FontAttributes="Bold"/>
+                            </StackLayout>
+
+
+                            <StackLayout>
+            <ListView x:Name="lstItems" HorizontalOptions="StartAndExpand" VerticalOptions="FillAndExpand"
+            SeparatorColor="Black" SeparatorVisibility="Default" HasUnevenRows="True" 
+            ItemsSource="{Binding CurrentDetails.attributes.items}" CachingStrategy="RecycleElement" BackgroundColor="White" ItemSelected="ListView_ItemSelected">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical" Padding="10"  VerticalOptions="FillAndExpand"
+                        MinimumHeightRequest="100">
+                            <StackLayout>
+                                <Image x:Name="foodItemName" Source="{Binding itemAttributes.itemPhoto}" Aspect="AspectFill"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand" HorizontalOptions="Center">
+                                    <Label Text="{Binding itemAttributes.itemName}" FontSize="18" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label Text="x" FontSize="18" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label Text="{Binding itemAttributes.quantity}" FontSize="18" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label Text=" " FontSize="30" />
+                                    <Label Text="£" FontSize="18" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label Text="{Binding itemAttributes.itemPrice}" FontSize="18" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label Text="Each" FontSize="18" TextColor="Black" FontAttributes="Bold"/>
+                            </StackLayout>
+                            </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            </ListView>
+
+                                
+         </StackLayout>
+
+         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="10">
+                           <Label Text="Order Total: £" FontSize="18" TextColor="Black" FontAttributes="Bold"/>
+                           <Label Text="{Binding CurrentDetails.attributes.orderTotal}" FontSize="18" TextColor="Black" FontAttributes="Bold"/>
+         </StackLayout>
+
+           </StackLayout>
+            </StackLayout>
+    </Grid>
+
+
+    </ContentPage.Content>
+
+</ContentPage>

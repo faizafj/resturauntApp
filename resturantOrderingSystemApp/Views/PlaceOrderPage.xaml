@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="resturantOrderingSystemApp.Views.PlaceOrderPage">
+    <ContentPage.Content>
+        
+         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+             <Entry Placeholder="Enter Number Of Places"> </Entry>
+             <Button Text="Place Order" TextColor="White" BackgroundColor="Black"> </Button>
+          </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

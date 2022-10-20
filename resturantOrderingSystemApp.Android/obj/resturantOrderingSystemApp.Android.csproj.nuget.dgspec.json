@@ -1,0 +1,147 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/faiza/Documents/Year 3/mobileAppDev/mobileApp/resturantOrderingSystemApp/resturantOrderingSystemApp.Android/resturantOrderingSystemApp.Android.csproj": {}
+  },
+  "projects": {
+    "/Users/faiza/Documents/Year 3/mobileAppDev/mobileApp/resturantOrderingSystemApp/resturantOrderingSystemApp.Android/resturantOrderingSystemApp.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/faiza/Documents/Year 3/mobileAppDev/mobileApp/resturantOrderingSystemApp/resturantOrderingSystemApp.Android/resturantOrderingSystemApp.Android.csproj",
+        "projectName": "resturantOrderingSystemApp.Android",
+        "projectPath": "/Users/faiza/Documents/Year 3/mobileAppDev/mobileApp/resturantOrderingSystemApp/resturantOrderingSystemApp.Android/resturantOrderingSystemApp.Android.csproj",
+        "packagesPath": "/Users/faiza/.nuget/packages/",
+        "outputPath": "/Users/faiza/Documents/Year 3/mobileAppDev/mobileApp/resturantOrderingSystemApp/resturantOrderingSystemApp.Android/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/faiza/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid11.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid11.0": {
+            "projectReferences": {
+              "/Users/faiza/Documents/Year 3/mobileAppDev/mobileApp/resturantOrderingSystemApp/resturantOrderingSystemApp/resturantOrderingSystemApp.csproj": {
+                "projectPath": "/Users/faiza/Documents/Year 3/mobileAppDev/mobileApp/resturantOrderingSystemApp/resturantOrderingSystemApp/resturantOrderingSystemApp.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid11.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2401, )"
+            }
+          }
+        }
+      }
+    },
+    "/Users/faiza/Documents/Year 3/mobileAppDev/mobileApp/resturantOrderingSystemApp/resturantOrderingSystemApp/resturantOrderingSystemApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/faiza/Documents/Year 3/mobileAppDev/mobileApp/resturantOrderingSystemApp/resturantOrderingSystemApp/resturantOrderingSystemApp.csproj",
+        "projectName": "resturantOrderingSystemApp",
+        "projectPath": "/Users/faiza/Documents/Year 3/mobileAppDev/mobileApp/resturantOrderingSystemApp/resturantOrderingSystemApp/resturantOrderingSystemApp.csproj",
+        "packagesPath": "/Users/faiza/.nuget/packages/",
+        "outputPath": "/Users/faiza/Documents/Year 3/mobileAppDev/mobileApp/resturantOrderingSystemApp/resturantOrderingSystemApp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/faiza/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2401, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.407/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

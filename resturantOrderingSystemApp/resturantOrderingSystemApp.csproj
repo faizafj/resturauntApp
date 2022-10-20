@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
+    <PackageReference Include="System.Text.Json" Version="6.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.15" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="ViewModels\" />
+    <None Remove="Views\" />
+    <None Remove="Navigation\" />
+    <None Remove="Models\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Services\" />
+    <None Remove="System.Text.Json" />
+    <None Remove="Microsoft.AspNetCore.Http.Features" />
+    <None Remove="Microsoft.Extensions.Logging" />
+    <None Remove="Microsoft.Extensions.DependencyInjection" />
+    <None Remove="Models\MenuItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\" />
+    <Folder Include="Navigation\" />
+    <Folder Include="Models\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+</Project>
